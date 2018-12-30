@@ -1,0 +1,12 @@
+.edu {
+  h3 {
+    margin: 0;
+    padding: $base-unit * 0.25 $base-unit * 0.25;
+    font-weight: $fw-bold;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: $base-unit;
+    padding-left: $base-unit;
+  }
+}

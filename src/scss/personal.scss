@@ -1,0 +1,64 @@
+.colapse {
+  margin-left: -$base-unit;
+  margin-right: -$base-unit;
+  margin-bottom: $base-unit;
+  margin-top: $base-unit;
+  background-color: $color-3;
+  padding-left: $base-unit;
+  padding-top: $base-unit * 0.5;
+  padding-bottom: $base-unit * 0.5;
+  line-height: normal;
+  h3 {
+    margin: 0;
+  }
+}
+
+.personalData,
+.skills {
+  padding-bottom: $base-unit;
+
+  p {
+    margin: 0;
+    padding-top: $base-unit * 0.5;
+  }
+}
+.progres {
+  display: flex;
+  flex-wrap: nowrap;
+  & span {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: $color-1;
+  }
+  .progres-dark {
+    background-color: $color-3;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+.flex-cont {
+  position: relative;
+  display: block;
+
+  @media (min-width: $bpoint-tab) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.flex-itm {
+  @media (min-width: $bpoint-tab) {
+    margin: $space;
+    flex-grow: 1;
+    width: 200px;
+    height: auto;
+  }
+  @media (min-width: $bpoint-desk) {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,48 @@
+// COLORS
+$color-1: #ffffff;
+$color-2: #373d48;
+$color-3: #252932;
+
+$color-4: #7a217f;
+$color-5: #767676;
+$color-6: #b7b7b7;
+$color-7: #000000;
+$color-8: #0d70b7;
+$color-9: #707070;
+$color-10: #00a3e2;
+$color-11: #dadada;
+
+$white: #fff;
+$black: #000;
+$color-error: red;
+$color-ok: green;
+
+// FONTS
+$base-unit: 1rem; //16px
+$font-1: "Roboto Slab", sans-serif;
+// $font-2: ;
+$font-size-base: $base-unit; //16 px
+$fw-normal: 400;
+$fw-semi: 600;
+$fw-bold: 700;
+
+// FONT SIZE
+$font-size-body: $font-size-base;
+$font-size-body2: $font-size-base * 0.75;
+$font-size-h1: $font-size-base * 2.25; //36
+$font-size-h2: $font-size-base * 2; //32
+$font-size-h3: $font-size-base * 1.25; //20
+$font-size-h4: $font-size-base * 1; // 16
+$font-size-h5: $font-size-base * 0.75; // 12
+$font-size-h6: $font-size-base * 0.62; //10
+
+// SPACE
+$space: 2 * $base-unit; // 32px
+
+// BREAK POINTS
+$bpoint-mob: 360px;
+$bpoint-tab: 768px;
+$bpoint-desk: 1024px;
+$bpoint-desklg: 1600px;
+
+$cont-max-width: 64 * $base-unit;
