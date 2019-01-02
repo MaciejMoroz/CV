@@ -1,3 +1,16 @@
+.header {
+  min-width: 300px;
+  background-color: $color-2;
+  width: 100%;
+  padding: $base-unit $base-unit $base-unit;
+  text-align: left;
+
+  @media (min-width: $bpoint-desk) {
+    max-width: 300px;
+    margin: 0;
+  }
+}
+
 .img-box {
   height: $space * 18.75;
 

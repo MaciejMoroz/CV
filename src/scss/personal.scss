@@ -1,28 +1,27 @@
-.colapse {
+.personalData {
   margin-left: -$base-unit;
   margin-right: -$base-unit;
-  margin-bottom: $base-unit;
-  margin-top: $base-unit;
-  background-color: $color-3;
-  padding-left: $base-unit;
-  padding-top: $base-unit * 0.5;
-  padding-bottom: $base-unit * 0.5;
-  line-height: normal;
-  h3 {
-    margin: 0;
+  padding-bottom: $base-unit;
+
+  p {
+    padding-left: $space;
   }
 }
 
-.personalData,
 .skills {
+  margin-left: -$base-unit;
+  margin-right: -$base-unit;
   padding-bottom: $base-unit;
 
   p {
     margin: 0;
     padding-top: $base-unit * 0.5;
+    margin-left: $space;
   }
 }
 .progres {
+  margin-left: $base-unit;
+  margin-right: $base-unit;
   display: flex;
   flex-wrap: nowrap;
   & span {
@@ -61,4 +60,36 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.btn-leftSite {
+  background-color: $color-3;
+  color: white;
+  cursor: pointer;
+  padding: $base-unit;
+  width: 100%;
+  min-width: 300px;
+  text-align: left;
+  font-size: 15px;
+  box-sizing: border-box;
+  &:hover {
+    background-color: $color-4;
+  }
+  @media (min-width: $bpoint-desk) {
+    pointer-events: none;
+    max-width: 300px;
+  }
+  &:after {
+    content: "\02795";
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    @media (min-width: $bpoint-desk) {
+      display: none;
+    }
+  }
+}
+.active:after {
+  content: "\2796";
 }
