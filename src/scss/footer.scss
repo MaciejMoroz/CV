@@ -1,7 +1,16 @@
 .footer {
-  // position: relative;
+  // min-width: 300px;
   margin: $space;
   p {
+    min-width: 300px;
     color: $color-3;
+    padding: $space;
   }
+}
+.copyright {
+  min-width: 300px;
+  margin-top: $space;
+  text-align: center;
+  cursor: pointer;
+  color: $color-3;
 }
