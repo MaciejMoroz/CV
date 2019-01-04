@@ -70,7 +70,9 @@
   width: 100%;
   min-width: 300px;
   text-align: left;
-  font-size: 15px;
+  font-size: $font-size-h3;
+  font-weight: $fw-bold;
+  font-family: $font-1;
   box-sizing: border-box;
   &:hover {
     background-color: $color-4;

@@ -156,6 +156,9 @@ td {
   border-bottom: 1px solid rgba(55, 61, 72, 0.3);
   width: 100%;
   text-align: left;
+  font-size: $font-size-h3;
+  font-weight: $fw-bold;
+  font-family: $font-1;
   &:after {
     content: "\02795";
     font-size: 13px;
