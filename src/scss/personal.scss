@@ -38,6 +38,13 @@
     width: 100%;
     height: 10px;
   }
+  .progres-dark-half {
+    background-color: $color-1;
+    float: right;
+    display: block;
+    width: 50%;
+    height: 10px;
+  }
 }
 
 .flex-cont {
