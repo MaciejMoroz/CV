@@ -3,7 +3,7 @@
   margin-right: -$base-unit;
   padding-bottom: $base-unit;
 
-  p {
+  &__cont {
     padding-left: $space;
   }
 }
@@ -13,7 +13,7 @@
   margin-right: -$base-unit;
   padding-bottom: $base-unit;
 
-  p {
+  &__cont {
     margin: 0;
     padding-top: $base-unit * 0.5;
     margin-left: $space;
@@ -24,26 +24,28 @@
   margin-right: $base-unit;
   display: flex;
   flex-wrap: nowrap;
-  & span {
+  &__box {
     float: left;
     display: block;
     width: 100%;
     height: 10px;
     background-color: $color-1;
-  }
-  .progres-dark {
-    background-color: $color-3;
-    float: left;
-    display: block;
-    width: 100%;
-    height: 10px;
-  }
-  .progres-dark-half {
-    background-color: $color-1;
-    float: right;
-    display: block;
-    width: 50%;
-    height: 10px;
+
+    &--dark {
+      background-color: $color-3;
+      float: left;
+      display: block;
+      width: 100%;
+      height: 10px;
+    }
+
+    &--dark-half {
+      background-color: $color-1;
+      float: right;
+      display: block;
+      width: 50%;
+      height: 10px;
+    }
   }
 }
 

@@ -14,7 +14,7 @@
 .img-box {
   height: $space * 18.75;
 
-  .img {
+  &__img {
     background-image: url(../img/DSC08674.jpg);
     background-repeat: no-repeat;
     background-size: cover;
