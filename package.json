@@ -19,6 +19,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-wait": "0.0.2",
-    "lodash": "^4.17.13"
+    "lodash": "^4.17.19"
   }
 }
