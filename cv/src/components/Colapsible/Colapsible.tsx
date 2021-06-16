@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components/macro';
 
-import { PaddingLeftRigth } from 'styles/wrappers.scss';
-
-import { ReactComponent as ArrowSvg } from 'assets/arrow.svg';
+import { ReactComponent as ArrowSvg } from 'assets/img/arrow.svg';
 
 const Button = styled.button<{ exp?: boolean }>`
   display: flex;
@@ -14,13 +12,16 @@ const Button = styled.button<{ exp?: boolean }>`
   text-transform: uppercase;
   font-weight: ${({ theme }) => theme.fw.bold};
   padding: ${({ theme }) => theme.space.base};
-  font-size: 2.2rem;
+  font-size: ${({ theme }) => theme.fs.h5};
+  white-space: nowrap;
+
   @media screen and (min-width: ${({ theme }) => theme.bp.tab}) {
     font-size: ${({ theme }) => theme.fs.h4};
   }
   @media screen and (min-width: ${({ theme }) => theme.bp.desk}) {
     font-size: ${({ theme }) => theme.fs.h3};
     padding: ${({ theme }) => `${theme.space.base} ${theme.space.primary}`};
+    cursor: default;
   }
   ${({ exp }) =>
     exp &&
@@ -49,6 +50,7 @@ const Icon = styled.div<IIsColapsed>`
     isColapsed &&
     css`
       transform: rotate(180deg);
+      transform-origin: 12px;
     `}
   ${({ exp }) =>
     exp &&
@@ -72,7 +74,7 @@ const ColapsibleSection = styled.div<IIsColapsed>`
   ${({ isColapsed }) =>
     isColapsed &&
     css`
-      max-height: 500px;
+      max-height: 2500px;
       height: auto;
     `}
   ${({ exp }) =>
@@ -100,15 +102,37 @@ const Colapsible: React.FunctionComponent<IColapsibleProps> = ({
   exp = false,
 }) => {
   const [isColapsed, setIsColapsed] = useState(false);
+  const [dimensions, setDimensions] = React.useState({
+    width: window.innerWidth,
+  });
 
   useEffect(() => {
-    if (window.innerWidth > 992) {
+    function handleResize() {
+      setDimensions({
+        width: window.innerWidth,
+      });
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
+  useEffect(() => {
+    if (dimensions.width > 992) {
       setIsColapsed(true);
     }
-  }, []);
+  }, [dimensions]);
+
+  const handleColapse = () => {
+    if (dimensions.width < 992) {
+      setIsColapsed(!isColapsed);
+    }
+  };
+
   return (
     <>
-      <Button onClick={() => setIsColapsed(!isColapsed)} exp={exp}>
+      <Button onClick={() => handleColapse()} exp={exp}>
         <span>{heading}</span>
         <Icon isColapsed={isColapsed} exp={exp}>
           <ArrowSvg />

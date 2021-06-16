@@ -51,6 +51,10 @@ const GlobalStyle = createGlobalStyle`
     -webkit-tap-highlight-color: transparent;
   }
 
+  .bold { 
+    font-weight: 700;
+  }
+
   `;
 
 export default GlobalStyle;

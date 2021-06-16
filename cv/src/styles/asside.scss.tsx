@@ -3,6 +3,8 @@ import styled from 'styled-components/macro';
 export const ImgWrapper = styled.div`
   width: 100%;
   margin: ${({ theme }) => theme.space.base} 0;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: ${({ theme }) => theme.bp.desk}) {
     margin: ${({ theme }) => theme.space.primary} 0;
   }

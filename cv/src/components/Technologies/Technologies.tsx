@@ -1,5 +1,4 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
 
 import Colapsible from 'components/Colapsible/Colapsible';
 import { UserInfo, UserInfoLabel, TechnologyLevel } from 'styles/asside.scss';

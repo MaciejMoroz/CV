@@ -5,8 +5,11 @@ import PersonalInfo from 'components/PersonalInfo/PersonalInfo';
 import Technologies from 'components/Technologies/Technologies';
 import CvSection from 'components/CvSection/CvSection';
 
-import PersonPhoto from 'assets/IMG_4965.jpg';
+import PersonPhoto from 'assets/img/IMG_4965.jpg';
 import Expirence from 'components/Expirence/Expirence';
+import Education from 'components/Education/Education';
+import Hobby from 'components/Hobby/Hobby';
+import Footer from 'components/Footer/Footer';
 
 const Wrapper = styled.section`
   display: flex;
@@ -16,12 +19,15 @@ const Wrapper = styled.section`
   @media (min-width: ${({ theme }) => theme.bp.desk}) {
     flex-direction: row;
   }
+  @page {
+    size: 210mm 297 mm;
+  }
 `;
 
 const AsideWrapper = styled.aside`
   background: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.white};
-  max-width: 362px;
+  width: 100%;
   margin: 0 auto;
   padding: ${({ theme }) => theme.space.base} 0;
 
@@ -34,7 +40,6 @@ const AsideWrapper = styled.aside`
 `;
 
 const MainContent = styled.div`
-  max-width: 362px;
   padding: ${({ theme }) => theme.space.base} 0;
   margin: 0 auto;
   width: 100%;
@@ -57,7 +62,7 @@ const technologies = [
   { name: 'React', level: 6 },
   { name: 'Redux', level: 3 },
   { name: 'JavaScript ES5/ES6', level: 6 },
-  { name: 'TypeScript', level: 4 },
+  { name: 'TypeScript', level: 2 },
   { name: 'jQuery', level: 3 },
   { name: 'HTML5', level: 6 },
   { name: 'CSS3', level: 6 },
@@ -80,6 +85,13 @@ const Cv: React.FunctionComponent = () => {
         <CvSection heading="Doświadczenie">
           <Expirence />
         </CvSection>
+        <CvSection heading="Edukacja">
+          <Education />
+        </CvSection>
+        <CvSection heading="Zainteresowania">
+          <Hobby />
+        </CvSection>
+        <Footer />
       </MainContent>
     </Wrapper>
   );

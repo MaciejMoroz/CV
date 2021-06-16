@@ -1,7 +1,7 @@
-import { Heading4 } from 'components/UI/Text/Heading';
 import React from 'react';
 import styled from 'styled-components/macro';
 import { PaddingTopBottom } from 'styles/wrappers.scss';
+import { Heading4, Paragraph } from 'components/UI/Text/Text';
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,27 +11,33 @@ const Wrapper = styled.div`
 `;
 
 const Col1 = styled.div`
-  width: 14%;
+  width: 16%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
   min-width: 100px;
+  margin-right: 8px;
 `;
 
 const Col2 = styled.div`
-  width: 85%;
+  width: 82%;
 `;
 
-const Date = styled.div`
+const Date = styled(Paragraph)`
   font-weight: ${({ theme }) => theme.fw.bold};
   margin-bottom: 8px;
+  white-space: nowrap;
+`;
+
+const Heading = styled(Heading4)`
+  margin-bottom: 16px;
 `;
 
 interface ICvElementProps {
-  dateFrom: string;
-  dateTo: string;
-  heading: string;
+  dateFrom: string | null;
+  dateTo: string | null;
+  heading: string | null;
 }
 
 const CvElement: React.FunctionComponent<ICvElementProps> = ({
@@ -44,11 +50,15 @@ const CvElement: React.FunctionComponent<ICvElementProps> = ({
     <PaddingTopBottom>
       <Wrapper>
         <Col1>
-          <Date>{dateFrom}&nbsp;-&nbsp;</Date>
+          <Date>
+            {dateFrom}&nbsp;
+            {dateTo != null ? ' - ' : null}
+            &nbsp;
+          </Date>
           <Date>{dateTo}</Date>
         </Col1>
         <Col2>
-          <Heading4>{heading}</Heading4>
+          <Heading>{heading}</Heading>
           <div>{children}</div>
         </Col2>
       </Wrapper>

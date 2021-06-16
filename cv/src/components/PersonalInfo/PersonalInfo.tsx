@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { PaddingLeftRigth } from 'styles/wrappers.scss';
 
-import { Heading1 } from 'components/UI/Text/Heading';
+import { Heading1 } from 'components/UI/Text/Text';
 import Colapsible from 'components/Colapsible/Colapsible';
 import {
   ImgWrapper,
@@ -45,7 +45,9 @@ const PersonalInfo: React.FunctionComponent<IPersonalInfoProps> = ({
         </UserInfo>
         <UserInfo>
           <UserInfoLabel>Telefon:&nbsp;</UserInfoLabel>
-          <UserInfoText> {personInfo.phone} </UserInfoText>
+          <UserInfoText>
+            <a href={`tel:${personInfo.phone}`}>{personInfo.phone}</a>
+          </UserInfoText>
         </UserInfo>
       </Colapsible>
     </>

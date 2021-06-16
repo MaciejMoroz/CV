@@ -6,7 +6,7 @@ import GlobalStyle from 'theme/GlobalStyle';
 
 const Cv = lazy(() => import('./views/Cv'));
 
-function App() {
+const App: React.FunctionComponent = () => {
   return (
     <>
       <GlobalStyle />
@@ -17,6 +17,6 @@ function App() {
       </ThemeProvider>
     </>
   );
-}
+};
 
 export default App;
