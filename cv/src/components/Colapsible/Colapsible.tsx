@@ -5,7 +5,7 @@ import { ReactComponent as ArrowSvg } from 'assets/img/arrow.svg';
 
 const Button = styled.button<{ exp?: boolean }>`
   display: flex;
-  background: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.secondary};
   justify-content: space-between;
   width: 100%;
   color: ${({ theme }) => theme.colors.white};
@@ -28,7 +28,7 @@ const Button = styled.button<{ exp?: boolean }>`
     css`
       background: ${({ theme }) => theme.colors.white};
       color: ${({ theme }) => theme.colors.text};
-      border: 1px solid ${({ theme }) => theme.colors.text};
+      border: 1px solid ${({ theme }) => theme.colors.secondary};
       border-left: 0;
       border-right: 0;
       @media screen and (min-width: ${({ theme }) => theme.bp.desk}) {
@@ -56,7 +56,7 @@ const Icon = styled.div<IIsColapsed>`
     exp &&
     css`
       svg {
-        fill: ${({ theme }) => theme.colors.text};
+        fill: ${({ theme }) => theme.colors.secondary};
       }
     `}
 `;
