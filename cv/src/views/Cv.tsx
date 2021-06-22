@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components/macro';
 
 import PersonalInfo from 'components/PersonalInfo/PersonalInfo';
@@ -10,6 +10,7 @@ import Expirence from 'components/Expirence/Expirence';
 import Education from 'components/Education/Education';
 import Hobby from 'components/Hobby/Hobby';
 import Footer from 'components/Footer/Footer';
+import Print from 'components/Print/Print';
 
 const Wrapper = styled.section`
   display: flex;
@@ -19,8 +20,9 @@ const Wrapper = styled.section`
   @media (min-width: ${({ theme }) => theme.bp.desk}) {
     flex-direction: row;
   }
-  @page {
-    size: 210mm 297 mm;
+  @media print {
+    display: flex;
+    flex-direction: row;
   }
 `;
 
@@ -37,6 +39,12 @@ const AsideWrapper = styled.aside`
     padding: ${({ theme }) => theme.space.primary} 0;
     min-height: 100vh;
   }
+  @media print {
+    max-width: 260px;
+    margin: 0;
+    padding: ${({ theme }) => theme.space.primary} 0;
+    min-height: 100vh;
+  }
 `;
 
 const MainContent = styled.div`
@@ -47,6 +55,10 @@ const MainContent = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.bp.desk}) {
     max-width: none;
     padding: ${({ theme }) => `${theme.space.primary}`};
+  }
+  @media print {
+    max-width: none;
+    padding: ${({ theme }) => `${theme.space.primary} ${theme.space.base}`};
   }
 `;
 
@@ -74,26 +86,32 @@ const technologies = [
 const languages = [{ name: 'J. angielski', level: 3 }];
 
 const Cv: React.FunctionComponent = () => {
+  const CVref = useRef(null);
+  3;
+
   return (
-    <Wrapper>
-      <AsideWrapper>
-        <PersonalInfo personInfo={personInfo} />
-        <Technologies heading="Technologie" technologies={technologies} />
-        <Technologies heading="Języki obce" technologies={languages} />
-      </AsideWrapper>
-      <MainContent>
-        <CvSection heading="Doświadczenie">
-          <Expirence />
-        </CvSection>
-        <CvSection heading="Edukacja">
-          <Education />
-        </CvSection>
-        <CvSection heading="Zainteresowania">
-          <Hobby />
-        </CvSection>
-        <Footer />
-      </MainContent>
-    </Wrapper>
+    <>
+      <Wrapper ref={CVref}>
+        <AsideWrapper>
+          <PersonalInfo personInfo={personInfo} />
+          <Technologies heading="Technologie" technologies={technologies} />
+          <Technologies heading="Języki obce" technologies={languages} />
+        </AsideWrapper>
+        <MainContent>
+          <CvSection heading="Doświadczenie">
+            <Expirence />
+          </CvSection>
+          <CvSection heading="Edukacja">
+            <Education />
+          </CvSection>
+          <CvSection heading="Zainteresowania">
+            <Hobby />
+          </CvSection>
+          <Footer />
+        </MainContent>
+      </Wrapper>
+      <Print CVref={CVref} />
+    </>
   );
 };
 

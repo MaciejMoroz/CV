@@ -35,6 +35,7 @@ export const TechnologyLevel = styled.div<{ level: number }>`
   width: 100%;
   height: 10px;
   background-color: #252932;
+  display: ${({ level }) => (level === 0 ? 'none' : 'block')};
   &:before {
     content: '';
     position: absolute;

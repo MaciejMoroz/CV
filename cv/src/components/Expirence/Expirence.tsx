@@ -39,7 +39,7 @@ const Expirence: React.FunctionComponent = () => {
               <Li>
                 <Bold>Quiz i panel użytkownika:&nbsp;</Bold>React,
                 styled-components, i18Next, React Query, Fromik, REST API,
-                moment.js, LogRocket, Facebook Messenger;
+                moment.js, LogRocket, Facebook Messenger;1
               </Li>
               <Li>
                 <Bold>Panel admina:&nbsp;</Bold>React, Redux, MaterialUI,

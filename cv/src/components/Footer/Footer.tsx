@@ -22,6 +22,12 @@ const Icon = styled.img`
   margin-right: 8px;
 `;
 
+const HidePrint = styled.div`
+  @media print {
+    display: none;
+  }
+`;
+
 const Footer: React.FunctionComponent = () => {
   return (
     <Wrapper>
@@ -29,10 +35,12 @@ const Footer: React.FunctionComponent = () => {
         Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia
         rekrutacji na aplikowane przeze mnie stanowisko.
       </Paragraph>
-      <SecondaryLink href={cvPdf} download>
-        <Icon src={pdfIcon} alt="pdf icon" />
-        Pobierz CV
-      </SecondaryLink>
+      <HidePrint>
+        <SecondaryLink href={cvPdf} download>
+          <Icon src={pdfIcon} alt="pdf icon" />
+          Pobierz CV
+        </SecondaryLink>
+      </HidePrint>
     </Wrapper>
   );
 };
