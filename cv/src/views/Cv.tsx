@@ -23,6 +23,7 @@ const Wrapper = styled.section`
   @media print {
     display: flex;
     flex-direction: row;
+    -webkit-print-color-adjust: exact;
   }
 `;
 
@@ -110,7 +111,7 @@ const Cv: React.FunctionComponent = () => {
           <Footer />
         </MainContent>
       </Wrapper>
-      <Print CVref={CVref} />
+      {/* <Print CVref={CVref} /> */}
     </>
   );
 };
