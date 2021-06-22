@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     color: #2e2d41;
     cursor: default;
     font-size: 16px;
+    @media print {
+      overflow: visible;
+    }
   }
 
 
@@ -54,7 +57,15 @@ const GlobalStyle = createGlobalStyle`
   .bold { 
     font-weight: 700;
   }
+  @media print {
+  html, body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
 
-  `;
+
+`;
 
 export default GlobalStyle;

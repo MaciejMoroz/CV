@@ -12,4 +12,7 @@ export const PaddingTopBottom = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.bp.desk}) {
     padding: ${({ theme }) => theme.space.primary} 0;
   }
+  @media print {
+    padding: ${({ theme }) => theme.space.base} 0;
+  }
 `;

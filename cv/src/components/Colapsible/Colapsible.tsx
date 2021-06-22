@@ -59,11 +59,14 @@ const Icon = styled.div<IIsColapsed>`
         fill: ${({ theme }) => theme.colors.secondary};
       }
     `}
+  @media print {
+    display: none;
+  }
 `;
 
 const ColapsibleSection = styled.div<IIsColapsed>`
-  max-height: 0;
-  overflow: hidden;
+  max-height: 2500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   transition: all 0.4s ease-in-out;
@@ -72,10 +75,10 @@ const ColapsibleSection = styled.div<IIsColapsed>`
     padding: 0 ${({ theme }) => theme.space.primary};
   }
   ${({ isColapsed }) =>
-    isColapsed &&
+    !isColapsed &&
     css`
-      max-height: 2500px;
-      height: auto;
+      max-height: 0;
+      overflow: hidden;
     `}
   ${({ exp }) =>
     exp &&
