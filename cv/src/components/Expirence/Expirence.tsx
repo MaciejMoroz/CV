@@ -13,7 +13,7 @@ const Expirence: React.FunctionComponent = () => {
     <>
       <CvElement
         heading="ADSIRA Marketing Agency"
-        dateFrom="03.30.2020"
+        dateFrom="03.03.2020"
         dateTo="30.06.2021"
       >
         <Heading>Junior Web Developer</Heading>
@@ -27,23 +27,23 @@ const Expirence: React.FunctionComponent = () => {
               <PrimaryLink target="_blank" href="https://lifeswitcher.com">
                 Lifeswitcher.com
               </PrimaryLink>{' '}
-              Projekt z branży Fit & Health - generator diety ketogenicznej
+              Projekt z branży Fit & Health - generator diety ketogenicznej.
             </Paragraph>
             <Paragraph>
               <Bold>Na projekt składają się 4 platformy: </Bold>
             </Paragraph>
             <Ul>
               <Li>
-                <Bold>Blog:&nbsp;</Bold>WordPress;
+                <Bold>Blog:&nbsp;</Bold>WordPress.
               </Li>
               <Li>
                 <Bold>Quiz i panel użytkownika:&nbsp;</Bold>React,
                 styled-components, i18Next, React Query, Fromik, REST API,
-                moment.js, LogRocket, Facebook Messenger;1
+                moment.js, LogRocket, Facebook Messenger.
               </Li>
               <Li>
                 <Bold>Panel admina:&nbsp;</Bold>React, Redux, MaterialUI,
-                styled-components, REST API;
+                styled-components, REST API.
               </Li>
             </Ul>
           </Li>
@@ -52,11 +52,11 @@ const Expirence: React.FunctionComponent = () => {
               <PrimaryLink target="_blank" href="https://ceramikker.com">
                 Ceramikker.com
               </PrimaryLink>{' '}
-              Strona sprzedażowa kosmetyków samochodowych
+              Strona sprzedażowa kosmetyków samochodowych.
             </Paragraph>
             <Paragraph>
               <Bold>Technologie:&nbsp;</Bold>
-              HTML, SCSS, jQuery, GULP, REST API
+              HTML, SCSS, jQuery, GULP, REST API.
             </Paragraph>
           </Li>
         </Ul>
@@ -67,20 +67,20 @@ const Expirence: React.FunctionComponent = () => {
         <Ul>
           <Li>
             Obsługa serwerów - certyfikaty SSL, dodawanie domen - Plesk,
-            DirectAdmin;
+            DirectAdmin.
           </Li>
           <Li>
             Współpraca z działem marketingu: instalowanie oraz przesyłanie
             danych do Google Tag Menager'a, instalacja pixeli Facebook oraz
-            Taboola;
+            Taboola.
           </Li>
           <Li>
             Wsparcie działu suportu przy rozwiązywaniu problemów użytkowników -
-            operacje na bazach danych – phpMyAdmin;
+            operacje na bazach danych – phpMyAdmin.
           </Li>
           <Li>
             Analiza i optymalizacja stron internetowych - Webpack Bundle
-            Analyzer
+            Analyzer.
           </Li>
           <Li>
             Wdrażanie frontend'u (HTML, CSS, Bootstrap, JavaScript, jQuery,
@@ -96,11 +96,11 @@ const Expirence: React.FunctionComponent = () => {
         <Heading>Praktyki Front-end</Heading>
         <Paragraph>
           Realizacja projektu graficznego w zespole 3 osobowym wykorzystaniem
-          Jira, GitLab
+          Jira, GitLab.
         </Paragraph>
         <Paragraph>
           <Bold>Technologie: </Bold> HTML5, SCSS, JavasSript, BEM, Gulp,
-          GreenShock,
+          GreenShock.
         </Paragraph>
       </CvElement>
       <CvElement
