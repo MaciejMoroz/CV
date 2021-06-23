@@ -4,7 +4,7 @@ import pdfIcon from 'assets/img/pdf_icon_24px.png';
 import { SecondaryLink } from 'components/UI/common';
 import { Paragraph } from 'components/UI/Text/Text';
 
-import cvPdf from 'assets/files/Maciej Moroz Frontend developer.pdf';
+import cvPdf from 'assets/files/CV - Maciej Moroz - Frontend Developer.pdf';
 import theme from 'theme/Theme';
 
 const Wrapper = styled.footer`

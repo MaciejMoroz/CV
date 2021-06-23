@@ -23,7 +23,7 @@ const Print: React.FunctionComponent<IPrintProps> = ({ CVref }) => {
   return (
     <>
       <ReactToPrint
-        trigger={() => <button>Print this out!</button>}
+        trigger={() => <button>_</button>}
         content={() => componentToPrint}
         pageStyle={pageStyle}
       />

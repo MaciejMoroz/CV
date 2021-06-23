@@ -22,23 +22,23 @@ const Education: React.FunctionComponent = () => {
           <Bold>I Semestr</Bold>
         </Paragraph>
         <Ul>
-          <Li>Programowanie w języku JavaScript</Li>
-          <Li>Angular od podstaw – Programowanie aplikacji WEB</Li>
-          <Li>Framework i ekosystem React – Wprowadzenie</Li>
-          <Li>NodeJS – środowisko i technologia ServerSide 1</Li>
-          <Li>Podstawy Agile i Scrum (wykład/pracownia</Li>
-          <Li>Metodyka DevOps – produkcja i utrzymanie oprogramowania</Li>
+          <Li>Programowanie w języku JavaScript.</Li>
+          <Li>Angular od podstaw – Programowanie aplikacji WEB.</Li>
+          <Li>Framework i ekosystem React – Wprowadzenie.</Li>
+          <Li>NodeJS – środowisko i technologia ServerSide.</Li>
+          <Li>Podstawy Agile i Scrum (wykład/pracownia.</Li>
+          <Li>Metodyka DevOps – produkcja i utrzymanie oprogramowania.</Li>
         </Ul>
         <Paragraph>
           <Bold>II Semestr</Bold>
         </Paragraph>
         <Ul>
-          <Li>Zaawansowane zagadnienia języka JavaScript</Li>
-          <Li>Zaawansowane programowanie aplikacji w Angular</Li>
-          <Li>Framework i ekosystem React – Aplikacja serwerowa</Li>
-          <Li>NodeJS – środowisko i technologia ServerSide 2</Li>
-          <Li>Wytwarzanie oprogramowania z wykorzystaniem Agile i Scrum</Li>
-          <Li>Aplikacje mobilne w technologii React Native</Li>
+          <Li>Zaawansowane zagadnienia języka JavaScript.</Li>
+          <Li>Zaawansowane programowanie aplikacji w Angular.</Li>
+          <Li>Framework i ekosystem React – Aplikacja serwerowa.</Li>
+          <Li>NodeJS – środowisko i technologia ServerSide.</Li>
+          <Li>Wytwarzanie oprogramowania z wykorzystaniem Agile i Scrum.</Li>
+          <Li>Aplikacje mobilne w technologii React Native.</Li>
         </Ul>
       </CvElement>
       {/*  */}
@@ -55,22 +55,22 @@ const Education: React.FunctionComponent = () => {
           <Bold>I Semestr</Bold>
         </Paragraph>
         <Ul>
-          <Li>Podstawy programowania HTML5/CSS3</Li>
-          <Li>Podstawy programowania JavaScript</Li>
-          <Li>Tworzenie szablonów HTML na podstawie projektów graficznych</Li>
-          <Li>Webdesign – Wprowadzenie</Li>
-          <Li>Projektowanie User Experience</Li>
-          <Li>Narzędzia Front-End Developera 1</Li>
+          <Li>Podstawy programowania HTML5/CSS3.</Li>
+          <Li>Podstawy programowania JavaScript.</Li>
+          <Li>Tworzenie szablonów HTML na podstawie projektów graficznych.</Li>
+          <Li>Webdesign – Wprowadzenie.</Li>
+          <Li>Projektowanie User Experience.</Li>
+          <Li>Narzędzia Front-End Developera.</Li>
         </Ul>
         <Paragraph>
           <Bold>II Semestr</Bold>
         </Paragraph>
         <Ul>
-          <Li>Zaawansowane techniki programowania HTML5/CSS3</Li>
-          <Li>Język JavaScript w praktyce</Li>
-          <Li>Zaawansowane frameworki JavaScript</Li>
-          <Li>Web Design – Zagadnienia zaawansowane</Li>
-          <Li>Narzędzia Front-End Developera 2</Li>
+          <Li>Zaawansowane techniki programowania HTML5/CSS3.</Li>
+          <Li>Język JavaScript w praktyce.</Li>
+          <Li>Zaawansowane frameworki JavaScript.</Li>
+          <Li>Web Design – Zagadnienia zaawansowane.</Li>
+          <Li>Narzędzia Front-End Developera.</Li>
         </Ul>
       </CvElement>
       {/*  */}
