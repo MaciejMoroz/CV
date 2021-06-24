@@ -5,8 +5,8 @@ export const PageBreak = styled.div`
   @media print {
     display: block;
     page-break-before: always !important;
-    page-break-after: always !important;
-    height: 140px;
+    /* page-break-after: always !important; */
+    height: 80px;
     width: 100%;
   }
 `;

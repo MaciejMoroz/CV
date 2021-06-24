@@ -75,7 +75,7 @@ const Expirence: React.FunctionComponent = () => {
             Taboola.
           </Li>
           <Li>
-            Wsparcie działu suportu przy rozwiązywaniu problemów użytkowników -
+            Wsparcie działu supportu przy rozwiązywaniu problemów użytkowników -
             operacje na bazach danych – phpMyAdmin.
           </Li>
           <Li>

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import styled from 'styled-components/macro';
 
 import PersonalInfo from 'components/PersonalInfo/PersonalInfo';
-import Technologies from 'components/Technologies/Technologies';
+import PersonProgress from 'components/PersonProgress/PersonProgress';
 import CvSection from 'components/CvSection/CvSection';
 
 import PersonPhoto from 'assets/img/IMG_4965.jpg';
@@ -69,6 +69,7 @@ const personInfo = {
   email: 'maciej.moroz89@gmail.com',
   phone: 600437869,
   photo: PersonPhoto,
+  linkedin: 'linkedin.com/in/maciej-moroz',
 };
 
 const technologies = [
@@ -95,8 +96,8 @@ const Cv: React.FunctionComponent = () => {
       <Wrapper ref={CVref}>
         <AsideWrapper>
           <PersonalInfo personInfo={personInfo} />
-          <Technologies heading="Technologie" technologies={technologies} />
-          <Technologies heading="Języki obce" technologies={languages} />
+          <PersonProgress heading="Technologie" personProgress={technologies} />
+          <PersonProgress heading="Języki obce" personProgress={languages} />
         </AsideWrapper>
         <MainContent>
           <CvSection heading="Doświadczenie">
@@ -110,8 +111,8 @@ const Cv: React.FunctionComponent = () => {
           </CvSection>
           <Footer />
         </MainContent>
+        <Print CVref={CVref} />
       </Wrapper>
-      {/* <Print CVref={CVref} /> */}
     </>
   );
 };

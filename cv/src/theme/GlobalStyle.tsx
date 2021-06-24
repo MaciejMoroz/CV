@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     color: #2e2d41;
     cursor: default;
     font-size: 16px;
+    position: relative;
     @media print {
       overflow: visible;
     }
