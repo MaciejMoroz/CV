@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import ReactToPrint from 'react-to-print';
 
 const pageStyle = `
   @page {
     size: 210mm 297mm;
-    margin: 0mm;
+    margin: 2.5mm 2mm;
   }
 `;
 
+const Wrapper = styled.div`
+  position: absolute;
+`;
+
+const PrintBtn = styled.button`
+  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
+`;
 interface IPrintProps {
   CVref: any;
 }
@@ -21,13 +30,13 @@ const Print: React.FunctionComponent<IPrintProps> = ({ CVref }) => {
     }
   }, [CVref]);
   return (
-    <>
+    <Wrapper>
       <ReactToPrint
-        trigger={() => <button>_</button>}
+        trigger={() => <PrintBtn>.</PrintBtn>}
         content={() => componentToPrint}
         pageStyle={pageStyle}
       />
-    </>
+    </Wrapper>
   );
 };
 

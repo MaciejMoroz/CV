@@ -19,6 +19,7 @@ interface IPersonalInfoProps {
     email: string;
     phone: number;
     photo?: string;
+    linkedin: string;
   };
 }
 
@@ -47,6 +48,14 @@ const PersonalInfo: React.FunctionComponent<IPersonalInfoProps> = ({
           <UserInfoLabel>Telefon:&nbsp;</UserInfoLabel>
           <UserInfoText>
             <a href={`tel:${personInfo.phone}`}>{personInfo.phone}</a>
+          </UserInfoText>
+        </UserInfo>
+        <UserInfo>
+          <UserInfoLabel>Linkedin:&nbsp;</UserInfoLabel>
+          <UserInfoText>
+            <a target="_blank" href={`https://www.${personInfo.linkedin}`}>
+              {personInfo.linkedin}
+            </a>
           </UserInfoText>
         </UserInfo>
       </Colapsible>
