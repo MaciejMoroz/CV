@@ -37,7 +37,7 @@ const Expirence: React.FunctionComponent = () => {
                 <Bold>Blog:&nbsp;</Bold>WordPress.
               </Li>
               <Li>
-                <Bold>Quiz i panel użytkownika:&nbsp;</Bold>React,
+                <Bold>Quiz i panel użytkownika:&nbsp;</Bold>React, React hooks,
                 styled-components, i18Next, React Query, Fromik, REST API,
                 moment.js, LogRocket, Facebook Messenger.
               </Li>

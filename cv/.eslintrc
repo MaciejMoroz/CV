@@ -14,7 +14,8 @@
   "rules": {
     "no-console": 1,       // Means warning
     // "prettier/prettier": 2, // Means error
-    "prettier/prettier": ["error", {"endOfLine": "auto"}]
+    "prettier/prettier": ["error", {"endOfLine": "auto"}],
+    "@typescript-eslint/no-implicit-any-catch": "warn"
   },
   "settings":  {
     "react":  {
