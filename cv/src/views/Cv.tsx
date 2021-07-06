@@ -82,13 +82,12 @@ const technologies = [
   { name: 'CSS3', level: 6 },
   { name: 'Photoshop', level: 4 },
   { name: 'GitHub, GitLab, Bitbucket', level: 4 },
-  { name: 'Jira', level: 4 },
+  // { name: 'Jira', level: 4 },
 ];
-
 const languages = [{ name: 'J. angielski', level: 3 }];
 
 const Cv: React.FunctionComponent = () => {
-  const CVref = useRef(null);
+  const CVref = useRef<HTMLElement>(null);
   3;
 
   return (

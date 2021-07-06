@@ -25,7 +25,6 @@ const Print: React.FunctionComponent<IPrintProps> = ({ CVref }) => {
   const [componentToPrint, setComponentToPrint] = useState(null);
   useEffect(() => {
     if (CVref != null) {
-      console.log(CVref);
       setComponentToPrint(CVref.current);
     }
   }, [CVref]);
